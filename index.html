@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1><strong>bokus</strong></h1>
+                </div>
+                <div class="search-input">
+                    <label for="book-name-field">
+                        <input type="text" id="book-name-field" value="Sök böcker här...">
+                        <button onclick="searchBookNameFieldButton()" class="button">
+                            <strong><i class="fas fa-search"></i></strong>
+                        </button>
+                    </label>
+                    <span id="books-status"></span>
+                </div>
+                
+                <div class="cart__counter">
+                    <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+                    <h2>Checkout</h2>
+                </div>
+            </nav>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="./index.html"><strong>Våra Böcker</strong></a>
+                </div>
+
+                <div class="grid-item4">
+                    <a href="#nyheter"><strong>Nyheter</strong></a>
+                </div>
+
+                <div class="grid-item4">
+                    <a href="#topplistor"><strong>Topplistor</strong></a>
+                </div>
+
+                <div class="grid-item4">
+                    <a href="#bokusplay"><strong>Bokus Play</strong></a>
+                </div>
+
+                <div class="grid-item4">
+                    <a href="#erbjudanden"><strong>Erbjundanden</strong></a>
+                </div>
+
+                <div class="grid-item4">
+                    <a href="#bokrea" id="bokrea"><strong>BOKREA</strong></a>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart__items">
+                    <div class="check_out">
+                        <h4>Total Amount :</h4>
+                        <h4 class="total__cost">0</h4> <strong>kr</strong>
+                        <br><br>  
+                        <button class="btn check_out_btn">Checkout</button>
+                        <button class="btn close_cart_btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="products">
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="1" />
+                <img src="./C++ Direkt.jpeg" alt="C++ Direkt" srcset="" id="image" class="images" />
+                <br>
+                <h4 class="product__name">C++ Direkt</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="2" />
+                <img src="./HTML and CSS.jpeg" alt="HTML and CSS" srcset="" id="image" class="images"/>
+                <br>
+                <h4 class="product__name">HTML and CSS</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="3" />
+                <img src="./Programmering 1 C++.jpeg" alt="Programmering 1 C++" srcset="" id="image" class="images" />
+                <br>
+                <h4 class="product__name">Programmering 1 C++</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="4" />
+                <img src="./Programmering 1 C.jpeg" alt="Programmering 1 C#" srcset="" id="image" class="images" />
+                <br>
+                <h4 class="product__name">Programmering 1 C#</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="5" />
+                <img src="./Programmering 1 JavaScript.jpeg" alt="Programmering 1 JavaScript" srcset="" id="image" class="images"/>
+                <br>
+                <h4 class="product__name">Programmering 1 C++</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+            <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="6" />
+                <img src="./Webbutveckling 1.jpeg" alt="Webbutveckling 1" srcset="" id="image" class="images"/>
+                <br>
+                <h4 class="product__name">Webbutveckling 1</h4>
+                <h5 class="product__price">59 kr</h5>
+                <div class="btn__add__to__cart">Add To Cart</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/973bfeeb7a.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
